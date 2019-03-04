@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EmployeeTracker.Common.DepartmentRepository" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>DepartmentRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="objectSet" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.19899999999999998" />
+  </Class>
+  <Class Name="EmployeeTracker.Common.EmployeeRepository" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EmployeeRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="objectSet" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.21" />
+  </Class>
+  <Class Name="EmployeeTracker.Common.UnitOfWork" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="4.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AIAAANAAEAAAAgCAAACAAQAAAAAAAhABAAACAAAAAAA=</HashCode>
+      <FileName>UnitOfWork.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="underlyingContext" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.19899999999999998" />
+  </Class>
+  <Class Name="EmployeeTracker.Model.Employee" Collapsed="true">
+    <Position X="4" Y="7" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="EmployeeTracker.Model.Department" Collapsed="true">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="EmployeeTracker.Common.IEmployeeContext">
+    <Position X="4.75" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAACACAAAACQAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>IEmployeeContext.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EmployeeTracker.Common.IUnitOfWork">
+    <Position X="9.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAMAAEAAAAgAAAACAAQAAAAAAAhAAAAAAAAAAAAA=</HashCode>
+      <FileName>IUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EmployeeTracker.Model.Interfaces.IDepartmentRepository">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>IDepartmentRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EmployeeTracker.Model.Interfaces.IEmployeeRepository">
+    <Position X="0.5" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IEmployeeRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

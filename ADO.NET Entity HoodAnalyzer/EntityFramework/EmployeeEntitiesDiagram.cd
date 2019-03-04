@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EmployeeTracker.EntityFramework.EmployeeEntities">
+    <Position X="5.25" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACIAAAAAAAAAAICAKAAAACwAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>ContextTemplate.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Employees" />
+      <Property Name="Departments" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.19699999999999998" />
+  </Class>
+  <Class Name="EmployeeTracker.Model.Employee">
+    <Position X="9.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="EmployeeTracker.Model.Department">
+    <Position X="1.5" Y="4" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="EmployeeTracker.Common.IEmployeeContext">
+    <Position X="5.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

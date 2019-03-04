@@ -1,0 +1,53 @@
+﻿<Window x:Class="EmployeeTracker.View.HAnalystView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             
+        Title="HAnalystView" Height="300" Width="300">
+    <Window.Resources>
+        
+
+        <ResourceDictionary   Source="..\CompactFormStyles.xaml" />
+
+    </Window.Resources>
+    <Grid>
+        <Border Style="{StaticResource DetailBorder}" Margin="20,10,20,0" Padding="5">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical" >
+                    <TextBlock> 
+                    <Label>Cell Size (Map Units)</Label>                    
+                    <TextBox Width="50" Text="{Binding Path=CellSize}"></TextBox>
+                    </TextBlock>
+                    <GroupBox Margin="10,10,10,10" BorderThickness="2" HorizontalAlignment="Center">
+                        <GroupBox.Header>
+                            Extent
+                        </GroupBox.Header>
+                        <StackPanel>
+                            <RadioButton    Content="Use Input Layer"/>
+                            <RadioButton   Content="Current View"/>
+                            <RadioButton  Content="User Defined"/>
+                            <RadioButton   Content="Use Shapefile"/>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+                <Canvas HorizontalAlignment="Center">
+                    <TextBlock Canvas.Left="70" Canvas.Top="20">
+                            <Label>Top</Label>
+                            <TextBox Width="100"></TextBox>
+                    </TextBlock>
+                    <TextBlock  Canvas.Left="-10" Canvas.Top="80">
+                            <Label>Left</Label>
+                            <TextBox Width="100"></TextBox>
+                    </TextBlock>
+                    <TextBlock Canvas.Left="140" Canvas.Top="80">
+                            <Label>Right</Label>
+                           <TextBox Width="100"></TextBox>
+                    </TextBlock>
+                    <TextBlock Canvas.Left="40" Canvas.Top="130">
+                            <Label>Bottom</Label>
+                           <TextBox Width="100"></TextBox>
+                    </TextBlock>
+                </Canvas>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

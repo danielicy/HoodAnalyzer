@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EmployeeTracker.Model.Address">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAQAIAAAAIAAAACIAAAABAAAABAAAAAA=</HashCode>
+      <FileName>Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeeTracker.Model.ContactDetail">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAIAAEAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>ContactDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeeTracker.Model.Department">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAIAAAACAAAAAAAEQAAAABAAAA=</HashCode>
+      <FileName>Department.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeeTracker.Model.Email">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAACAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Email.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeeTracker.Model.Employee">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAAAAAgEAgAQAKAAQUECAABAAAAAAAACAGAAg=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeeTracker.Model.Phone">
+    <Position X="3" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAIAAAACAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Phone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

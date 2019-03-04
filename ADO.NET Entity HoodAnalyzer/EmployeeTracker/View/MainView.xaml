@@ -1,0 +1,86 @@
+﻿<Window x:Class="EmployeeTracker.View.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:v="clr-namespace:EmployeeTracker.View"
+        xmlns:vm="clr-namespace:EmployeeTracker.ViewModel"
+        xmlns:local="clr-namespace:EmployeeTracker"
+        Title="Employee Tracker" 
+        WindowState="Maximized"
+        Background="#FFEDEDED">
+    
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:EmployeeWorkspaceViewModel}">
+            <v:EmployeeWorkspaceView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:DepartmentWorkspaceViewModel}">
+            <v:DepartmentWorkspaceView />
+        </DataTemplate>
+        <DataTemplate  DataType="{x:Type vm:MapWorkSpaceViewModel}">
+            <v:MapWorkSpaceView/>
+        </DataTemplate>
+        <!--Local template used for loyalty board-->
+        <DataTemplate x:Key="LoyaltyBoardItem">
+            <!--<DataTemplate.Resources>
+                <ResourceDictionary Source="CompactFormStyles.xaml" />
+            </DataTemplate.Resources>-->
+            <Border Style="{StaticResource DetailBorder}" Margin="2,2,2,0">
+                <StackPanel>
+                    <TextBlock Text="{Binding Path=DisplayName}" FontWeight="Bold" />
+                    <TextBlock Text="{Binding Path=Position}" FontStyle="Italic" />
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Hired " />
+                        <TextBlock Text="{Binding Path=DisplayHireDate}" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+        <DataTemplate x:Key="LayersBoardItem">
+            
+            <Border Style="{StaticResource DetailBorder}" Margin="2,2,2,0">
+                <StackPanel>
+                    <TextBlock Text="{Binding Path=LayerName}" FontWeight="Bold" />
+                    <TextBlock Text="{Binding Path=LayerType}" FontStyle="Italic" />
+
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+                       
+    </Window.Resources>
+    
+    <Grid>
+        
+       
+        <local:Banner VerticalAlignment="Top"  ></local:Banner>
+        <StackPanel Orientation="Horizontal" Background="Black" Height="36" VerticalAlignment="top" Margin="0,45,0,0">
+            <TextBlock Margin="2">
+                            <!--<Hyperlink Command="{Binding Path=openMapCommand}">open Map</Hyperlink>-->
+                            |
+                   <Button Width="80" Height="23"  Style="{StaticResource GlossyButton}"  Command="{Binding Path=openMapCommand}">Open Map</Button>
+                     <Button Width="80" Height="23"  Style="{StaticResource GlossyButton}"  Command="{Binding Path=addFeatureCommand}">Add Feature</Button>
+                     <Button Width="80" Height="23"  Style="{StaticResource GlossyButton}"  Command="{Binding Path=HoodAnalystOpenCommand}">Hood Analyst</Button>
+                    <!--<Hyperlink Command="{Binding Path=addFeatureCommand}">Add Feature</Hyperlink>-->
+            </TextBlock>
+        </StackPanel>
+        <TabControl Padding="0" Margin="30,80,30,30" >
+            <TabItem>
+                <TabItem.Header>
+                    Map
+                </TabItem.Header>
+                <!--<WindowsFormsHost Name="MapHost"/>-->
+                <ContentControl Margin="10" Content="{Binding Path=.MapWorkspace}" /> 
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    Employees
+                </TabItem.Header>
+                <ContentControl Margin="10" Content="{Binding Path=.EmployeeWorkspace}" />
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    Departments
+                </TabItem.Header>
+                <ContentControl Margin="10" Content="{Binding Path=.DepartmentWorkspace}" />
+            </TabItem>           
+        </TabControl>
+    </Grid>
+</Window>
